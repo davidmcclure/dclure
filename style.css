@@ -285,6 +285,11 @@ header.entry-header a, header.entry-header h1 {
   font-weight: normal;
 }
 
+/* Lists */
+ol li {
+  margin: 1em 0;
+}
+
 
 /* =Images
 -------------------------------------------------------------- */
