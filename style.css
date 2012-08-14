@@ -20,6 +20,8 @@ Use it to make something cool, have fun, and share what you've learned with othe
 @import url(http://fonts.googleapis.com/css?family=Average);
 @import url(http://fonts.googleapis.com/css?family=Codystar:300,400);
 @import url(http://fonts.googleapis.com/css?family=EB+Garamond);
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300);
+@import url(http://fonts.googleapis.com/css?family=Alegreya:900);
 
 /* =Structure
 -------------------------------------------------------------- */
@@ -28,6 +30,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
 	display: block;
 	margin: auto;
   width: 600px;
+  font-family: "Source Sans Pro";
 }
 #primary {
 	float: left;
@@ -89,11 +92,11 @@ Use it to make something cool, have fun, and share what you've learned with othe
 #site-title {
 	font-size: 2em;
 	margin: 0;
-  font-family: 'EB Garamond';
+  font-family: Alegreya;
 }
 #site-title a {
   text-decoration: none;
-  color: #C8520B;
+  color: #ffb400;
 }
 #site-title a:hover {
   text-decoration: underline;
@@ -134,7 +137,7 @@ article {
 }
 .entry-content {
   font-size: 18px;
-  line-height: 21px;
+  line-height: 24px;
 }
 .single-author .entry-meta .byline {
 	display: none;
@@ -279,10 +282,6 @@ a, a:visited {
 a:hover, a:active {
 	color: #d54e21;
 	text-decoration: underline;
-}
-header.entry-header a, header.entry-header h1 {
-  font-family: 'EB Garamond';
-  font-weight: normal;
 }
 
 /* Lists */
