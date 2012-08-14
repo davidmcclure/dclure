@@ -16,10 +16,6 @@ Use it to make something cool, have fun, and share what you've learned with othe
 
 /* =Fonts
 -------------------------------------------------------------- */
-@import url(http://fonts.googleapis.com/css?family=Trocchi);
-@import url(http://fonts.googleapis.com/css?family=Average);
-@import url(http://fonts.googleapis.com/css?family=Codystar:300,400);
-@import url(http://fonts.googleapis.com/css?family=EB+Garamond);
 @import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300);
 @import url(http://fonts.googleapis.com/css?family=Alegreya:900);
 
@@ -116,6 +112,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
 
 #branding li, #menu-main-menu, .menu-main-menu-container {
   display: inline;
+  margin: 0 1em 0 0;
 }
 #menu-main-menu {
   padding-left: 1em;
@@ -280,7 +277,7 @@ a, a:visited {
 	text-decoration: none;
 	}
 a:hover, a:active {
-	color: #d54e21;
+	color: #ffb400;
 	text-decoration: underline;
 }
 
