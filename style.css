@@ -24,7 +24,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
 
 #page {
 	display: block;
-	margin: auto;
+	margin: 1em auto;
   width: 600px;
   font-family: "Source Sans Pro";
 }
