@@ -18,6 +18,12 @@ Use it to make something cool, have fun, and share what you've learned with othe
 -------------------------------------------------------------- */
 @import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300);
 @import url(http://fonts.googleapis.com/css?family=Alegreya:900);
+@import url(http://fonts.googleapis.com/css?family=Noticia+Text:400,400italic,700,700italic);
+@import url(http://fonts.googleapis.com/css?family=PT+Serif:400,700,400italic,700italic);
+@import url(http://fonts.googleapis.com/css?family=Ovo);
+@import url(http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic);
+@import url(http://fonts.googleapis.com/css?family=Londrina+Sketch);
+@import url(http://fonts.googleapis.com/css?family=Londrina+Outline);
 
 /* =Structure
 -------------------------------------------------------------- */
@@ -31,7 +37,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
 	display: block;
 	margin: 1em auto;
   width: 600px;
-  font-family: "Source Sans Pro";
+  font-family: "PT Serif";
 }
 #primary {
 	float: left;
@@ -91,15 +97,15 @@ Use it to make something cool, have fun, and share what you've learned with othe
 -------------------------------------------------------------- */
 
 #site-title {
-	font-size: 2em;
+	font-size: 3em;
 	margin: 0;
-  font-family: Alegreya;
+  font-family: "Londrina Outline";
 }
 #site-title a {
   text-decoration: none;
 }
 #site-title a:hover {
-  text-decoration: underline;
+  /* text-decoration: underline;*/
 }
 #site-description {
 	font-size: 1em;
@@ -136,6 +142,7 @@ article {
 .entry-title {
   margin-top: 3px;
   font-size: 1.3em;
+  font-weight: normal;
 }
 .entry-content {
   font-size: 18px;
