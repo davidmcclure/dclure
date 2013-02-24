@@ -19,6 +19,8 @@ Use it to make something cool, have fun, and share what you've learned with othe
 @import url(http://fonts.googleapis.com/css?family=PT+Serif:400,700,400italic,700italic);
 @import url(http://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900);
 @import url(http://fonts.googleapis.com/css?family=Neuton:200,300,400,700,800,400italic);
+@import url(http://fonts.googleapis.com/css?family=Text+Me+One);
+
 
 /* =Structure
 -------------------------------------------------------------- */
@@ -30,7 +32,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
 }
 #page {
 	display: block;
-	margin: 1em auto;
+	margin: 4em auto;
   width: 600px;
   font-family: "Roboto";
   font-weight: 300;
@@ -93,13 +95,8 @@ Use it to make something cool, have fun, and share what you've learned with othe
 -------------------------------------------------------------- */
 
 #site-title {
-  font-size: 2em;
   margin: 0;
-  font-family: "Neuton";
   font-weight: 500;
-}
-#site-title a {
-  text-decoration: none;
 }
 #site-description {
 	font-size: 1em;
@@ -133,7 +130,7 @@ article {
 .entry-title {
   margin: 3px 0 0;
   font-size: 2.4em;
-  font-weight: 200;
+  font-weight: 300;
 }
 .entry-date {
   font-size: 12px;
@@ -284,7 +281,7 @@ code {
 a, a:visited {
 	color: #21759b;
 	text-decoration: none;
-	}
+}
 a:hover, a:active {
 	color: #eea800;
 	text-decoration: underline;
