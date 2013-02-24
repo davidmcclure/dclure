@@ -15,7 +15,7 @@ get_header(); ?>
 
 				<header class="page-header">
 					<h1 class="page-title"><?php
-						printf( __( '// %s', 'toolbox' ), '<span>' . single_tag_title( '', false ) . '</span>' );
+						printf( __( '#%s', 'toolbox' ), '<span>' . single_tag_title( '', false ) . '</span>' );
 					?></h1>
 
 					<?php
