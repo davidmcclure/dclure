@@ -129,6 +129,9 @@ article {
   font-size: 2.4em;
   font-weight: 300;
 }
+.entry-title.archive {
+  font-size: 1em;
+}
 .entry-date {
   font-size: 12px;
 }
