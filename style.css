@@ -16,10 +16,9 @@ Use it to make something cool, have fun, and share what you've learned with othe
 
 /* =Fonts
 -------------------------------------------------------------- */
-@import url(http://fonts.googleapis.com/css?family=Alegreya:400italic,400,700);
 @import url(http://fonts.googleapis.com/css?family=PT+Serif:400,700,400italic,700italic);
-@import url(http://fonts.googleapis.com/css?family=Text+Me+One);
-@import url(http://fonts.googleapis.com/css?family=Ranchers);
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900);
+@import url(http://fonts.googleapis.com/css?family=Neuton:200,300,400,700,800,400italic);
 
 /* =Structure
 -------------------------------------------------------------- */
@@ -92,29 +91,19 @@ Use it to make something cool, have fun, and share what you've learned with othe
 /* =Header
 -------------------------------------------------------------- */
 
-/* #site-title {*/
-	/* font-size: 1em;*/
-	/* margin: 0;*/
-  /* font-family: "Text Me One";*/
-/* }*/
 #site-title {
-  font-size: 2.6em;
+  font-size: 2.4em;
   margin: 0;
-  font-family: "Ranchers";
+  font-family: "Neuton";
+  font-weight: 700;
 }
 #site-title a {
   text-decoration: none;
-}
-#site-title a:hover {
-  /* text-decoration: underline;*/
 }
 #site-description {
 	font-size: 1em;
 	font-weight: normal;
 	margin: 0 0 1em;
-}
-.page-title {
-  font-family: 'EB Garamond';
 }
 
 
@@ -124,7 +113,9 @@ Use it to make something cool, have fun, and share what you've learned with othe
 #branding li, #menu-main-menu, .menu-main-menu-container {
   display: inline;
   margin: 0 1em 0 0;
-  font-family: "Text Me One";
+  font-family: "Roboto";
+  font-weight: 300;
+  font-size: 12px;
 }
 #menu-main-menu {
   padding-left: 1em;
@@ -142,9 +133,15 @@ article {
 	display: block;
 }
 .entry-title {
-  margin-top: 3px;
-  font-size: 2em;
+  margin: 3px 0 0;
+  font-size: 3em;
   font-weight: normal;
+  font-family: "Neuton";
+}
+.entry-date {
+  font-family: "Roboto";
+  font-weight: 300;
+  font-size: 12px;
 }
 .entry-content {
   font-size: 18px;
@@ -183,6 +180,9 @@ article {
 .page .edit-link {
 	clear: both;
 	display: block;
+}
+.page-title {
+  font-family: "Neuton";
 }
 
 /* 404 page */
