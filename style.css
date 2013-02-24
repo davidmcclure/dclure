@@ -16,15 +16,10 @@ Use it to make something cool, have fun, and share what you've learned with othe
 
 /* =Fonts
 -------------------------------------------------------------- */
-@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300);
 @import url(http://fonts.googleapis.com/css?family=Alegreya:400italic,400,700);
-@import url(http://fonts.googleapis.com/css?family=Noticia+Text:400,400italic,700,700italic);
 @import url(http://fonts.googleapis.com/css?family=PT+Serif:400,700,400italic,700italic);
-@import url(http://fonts.googleapis.com/css?family=Ovo);
-@import url(http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic);
-@import url(http://fonts.googleapis.com/css?family=Londrina+Sketch);
-@import url(http://fonts.googleapis.com/css?family=Londrina+Outline);
-@import url(http://fonts.googleapis.com/css?family=Quicksand:300,400,700);
+@import url(http://fonts.googleapis.com/css?family=Text+Me+One);
+@import url(http://fonts.googleapis.com/css?family=Ranchers);
 
 /* =Structure
 -------------------------------------------------------------- */
@@ -97,11 +92,15 @@ Use it to make something cool, have fun, and share what you've learned with othe
 /* =Header
 -------------------------------------------------------------- */
 
+/* #site-title {*/
+	/* font-size: 1em;*/
+	/* margin: 0;*/
+  /* font-family: "Text Me One";*/
+/* }*/
 #site-title {
-	font-size: 2em;
-	margin: 0;
-  font-family: "Alegreya";
-  font-weight: 700;
+  font-size: 2.6em;
+  margin: 0;
+  font-family: "Ranchers";
 }
 #site-title a {
   text-decoration: none;
@@ -125,7 +124,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
 #branding li, #menu-main-menu, .menu-main-menu-container {
   display: inline;
   margin: 0 1em 0 0;
-  font-family: "Alegreya";
+  font-family: "Text Me One";
 }
 #menu-main-menu {
   padding-left: 1em;
@@ -136,7 +135,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
 -------------------------------------------------------------- */
 
 article {
-  margin-top: 1.5em;
+  margin-top: 5em;
 }
 .entry-meta {
 	clear: both;
@@ -144,7 +143,7 @@ article {
 }
 .entry-title {
   margin-top: 3px;
-  font-size: 1.3em;
+  font-size: 2em;
   font-weight: normal;
 }
 .entry-content {
