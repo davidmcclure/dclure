@@ -32,7 +32,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
 	display: block;
 	margin: 1em auto;
   width: 600px;
-  font-family: "PT Serif";
+  font-family: "Roboto";
 }
 #primary {
 	float: left;
@@ -92,10 +92,10 @@ Use it to make something cool, have fun, and share what you've learned with othe
 -------------------------------------------------------------- */
 
 #site-title {
-  font-size: 2.4em;
+  font-size: 2em;
   margin: 0;
   font-family: "Neuton";
-  font-weight: 700;
+  font-weight: 500;
 }
 #site-title a {
   text-decoration: none;
@@ -113,7 +113,6 @@ Use it to make something cool, have fun, and share what you've learned with othe
 #branding li, #menu-main-menu, .menu-main-menu-container {
   display: inline;
   margin: 0 1em 0 0;
-  font-family: "Roboto";
   font-weight: 300;
   font-size: 12px;
 }
@@ -126,7 +125,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
 -------------------------------------------------------------- */
 
 article {
-  margin-top: 5em;
+  margin-top: 3em;
 }
 .entry-meta {
 	clear: both;
@@ -134,18 +133,17 @@ article {
 }
 .entry-title {
   margin: 3px 0 0;
-  font-size: 3em;
-  font-weight: normal;
-  font-family: "Neuton";
+  font-size: 2.4em;
+  font-weight: 200;
 }
 .entry-date {
-  font-family: "Roboto";
   font-weight: 300;
   font-size: 12px;
 }
-.entry-content {
-  font-size: 18px;
+.entry-content p {
+  font-size: 16px;
   line-height: 24px;
+  font-weight: 300;
 }
 .single-author .entry-meta .byline {
 	display: none;
