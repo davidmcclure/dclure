@@ -28,63 +28,63 @@ Use it to make something cool, have fun, and share what you've learned with othe
   text-shadow: none;
 }
 #page {
-	display: block;
-	margin: 4em auto;
+  display: block;
+  margin: 4em auto;
   width: 600px;
   font-family: "Roboto";
   font-weight: 300;
 }
 #primary {
-	float: left;
-	margin: 0 -240px 0 0;
+  float: left;
+  margin: 0 -240px 0 0;
   width: 100%;
 }
 #content {
-	margin: 0;
+  margin: 0;
 }
 #main {
   clear: both;
 }
 #main .widget-area {
-	float: right;
-	overflow: hidden;
-	width: 220px;
+  float: right;
+  overflow: hidden;
+  width: 220px;
 }
 #colophon {
-	clear: both;
-	display: block;
-	width: 100%;
+  clear: both;
+  display: block;
+  width: 100%;
 }
 
 /* Increase the size of the content area for templates without sidebars */
 .full-width #content,
 .image-attachment #content,
 .error404 #content {
-	margin: 0;
+  margin: 0;
 }
 
 /* Text meant only for screen readers */
 .screen-reader-text,
 .assistive-text {
-	position: absolute !important;
-	clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
-	clip: rect(1px, 1px, 1px, 1px);
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
 }
 
 /* Alignment */
 .alignleft {
-	display: inline;
-	float: left;
+  display: inline;
+  float: left;
 }
 .alignright {
-	display: inline;
-	float: right;
+  display: inline;
+  float: right;
 }
 .aligncenter {
-	clear: both;
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
+  clear: both;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 
@@ -96,8 +96,8 @@ Use it to make something cool, have fun, and share what you've learned with othe
   font-weight: 500;
 }
 #site-description {
-	font-size: 1em;
-	margin: 0 0 1em;
+  font-size: 1em;
+  margin: 0 0 1em;
 }
 
 
@@ -121,8 +121,8 @@ article {
   margin-top: 3em;
 }
 .entry-meta {
-	clear: both;
-	display: block;
+  clear: both;
+  display: block;
 }
 .entry-title {
   margin: 3px 0 0;
@@ -140,38 +140,38 @@ article {
   line-height: 24px;
 }
 .single-author .entry-meta .byline {
-	display: none;
+  display: none;
 }
 #content nav {
-	display: block;
-	overflow: hidden;
+  display: block;
+  overflow: hidden;
 }
 #content nav .nav-previous {
-	float: left;
-	width: 50%;
+  float: left;
+  width: 50%;
 }
 #content nav .nav-next {
-	float: right;
-	text-align: right;
-	width: 50%;
+  float: right;
+  text-align: right;
+  width: 50%;
 }
 #content #nav-above {
-	display: none;
+  display: none;
 }
 .paged #content #nav-above,
 .single #content #nav-above {
-	display: block;
+  display: block;
 }
 #nav-below {
-	margin: 1em 0 0;
+  margin: 1em 0 0;
 }
 .page-link {
-	clear: both;
-	margin: 0 0 1em;
+  clear: both;
+  margin: 0 0 1em;
 }
 .page .edit-link {
-	clear: both;
-	display: block;
+  clear: both;
+  display: block;
 }
 .page-title {
   opacity: 0.4;
@@ -180,86 +180,86 @@ article {
 
 /* 404 page */
 .error404 .widget {
-	float: left;
-	width: 33%;
+  float: left;
+  width: 33%;
 }
 .error404 .widget .widgettitle,
 .error404 .widget ul {
-	margin-right: 1em;
+  margin-right: 1em;
 }
 .error404 .widget_tag_cloud {
-	clear: both;
-	float: none;
-	width: 100%;
+  clear: both;
+  float: none;
+  width: 100%;
 }
 
 /* Notices */
 .post .notice,
 .error404 #searchform {
-	background: #eee;
-	display: block;
-	padding: 1em;
+  background: #eee;
+  display: block;
+  padding: 1em;
 }
 
 /* Image Attachments */
 .image-attachment div.entry-meta {
-	float: left;
+  float: left;
 }
 .image-attachment nav {
-	float: right;
-	margin: 0 0 1em 0;
+  float: right;
+  margin: 0 0 1em 0;
 }
 .image-attachment .entry-content {
-	clear: both;
+  clear: both;
 }
 .image-attachment .entry-content .entry-attachment {
-	background: #eee;
-	margin: 0 0 1em;
-	padding: 1em;
-	text-align: center;
+  background: #eee;
+  margin: 0 0 1em;
+  padding: 1em;
+  text-align: center;
 }
 .image-attachment .entry-content .attachment {
-	display: block;
-	margin: 0 auto;
-	text-align: center;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
 }
 
 /* Aside Posts */
 .format-aside .entry-header {
-	display: none;
+  display: none;
 }
 .single .format-aside .entry-header {
-	display: block;
+  display: block;
 }
 .format-aside .entry-content,
 .format-aside .entry-summary {
-	padding-top: 1em;
+  padding-top: 1em;
 }
 .single .format-aside .entry-content,
 .single .format-aside .entry-summary {
-	padding-top: 0;
+  padding-top: 0;
 }
 
 /* Gallery Posts */
 .format-gallery .gallery-thumb {
-	float: left;
-	margin: 0 1em 0 0;
+  float: left;
+  margin: 0 1em 0 0;
 }
 
 /* Image Posts */
 .format-image .entry-header {
-	display: none;
+  display: none;
 }
 .single .format-image .entry-header {
-	display: block;
+  display: block;
 }
 .format-image .entry-content,
 .format-image .entry-summary {
-	padding-top: 1em;
+  padding-top: 1em;
 }
 .single .format-image .entry-content,
 .single .format-image .entry-summary {
-	padding-top: 0;
+  padding-top: 0;
 }
 
 /* Code */
@@ -277,15 +277,18 @@ pre {
 code {
   font-size: 14px;
 }
+.gist {
+  font-size: 13px;
+}
 
 /* Links */
 a, a:visited {
-	color: #21759b;
-	text-decoration: none;
+  color: #21759b;
+  text-decoration: none;
 }
 a:hover, a:active {
-	color: #eea800;
-	text-decoration: underline;
+  color: #eea800;
+  text-decoration: underline;
 }
 
 /* Lists */
@@ -298,7 +301,7 @@ ol li, #main li {
 -------------------------------------------------------------- */
 
 a img {
-	border: none;
+  border: none;
 }
 /*
 Resize images to fit the main content area.
@@ -312,29 +315,29 @@ img.size-medium,
 .attachment img,
 .widget-area img,
 .wp-caption {
-	max-width: 100%; /* When images are too wide for containing element, force them to fit. */
-	height: auto; /* Override height to match resized width for correct aspect ratio. */
+  max-width: 100%; /* When images are too wide for containing element, force them to fit. */
+  height: auto; /* Override height to match resized width for correct aspect ratio. */
 }
 img.alignleft {
-	margin-right: 1em;
+  margin-right: 1em;
 }
 img.alignright {
-	margin-left: 1em;
+  margin-left: 1em;
 }
 .wp-caption {
-	padding: .5em;
-	text-align: center;
+  padding: .5em;
+  text-align: center;
 }
 .wp-caption img {
-	margin: .25em;
+  margin: .25em;
 }
 .wp-caption .wp-caption-text {
-	margin: .5em;
+  margin: .5em;
 }
 .gallery-caption {
 }
 .wp-smiley {
-	margin: 0;
+  margin: 0;
 }
 
 
@@ -342,23 +345,23 @@ img.alignright {
 -------------------------------------------------------------- */
 
 #searchform label {
-	display: none;
+  display: none;
 }
 #searchform input#s {
-	width: 60%;
+  width: 60%;
 }
 input[type=text],
 input#s {
-	margin: 0 1em 0 0;
-	width: 60%;
+  margin: 0 1em 0 0;
+  width: 60%;
 }
 textarea {
-	width: 80%;
+  width: 80%;
 }
 
 /* Class for labelling required form items */
 .required {
-	color: #cc0033;
+  color: #cc0033;
 }
 
 
@@ -366,23 +369,23 @@ textarea {
 -------------------------------------------------------------- */
 
 article.comment {
-	display: block;
+  display: block;
 }
 #respond input[type=text] {
-	display: block;
-	width: 60%;
+  display: block;
+  width: 60%;
 }
 #respond textarea {
-	display: block;
-	margin: 0 0 1em;
-	width: 80%;
+  display: block;
+  margin: 0 0 1em;
+  width: 80%;
 }
 #respond .form-allowed-tags {
-	clear: both;
-	width: 80%;
+  clear: both;
+  width: 80%;
 }
 #respond .form-allowed-tags code {
-	display: block;
+  display: block;
 }
 
 
@@ -390,13 +393,13 @@ article.comment {
 -------------------------------------------------------------- */
 
 .widget {
-	display: block;
+  display: block;
 }
 .widget-area .widget_search {
-	overflow: hidden;
+  overflow: hidden;
 }
 .widget-area .widget_search input {
-	float: left;
+  float: left;
 }
 
 
@@ -404,5 +407,5 @@ article.comment {
 -------------------------------------------------------------- */
 
 #colophon {
-	padding: 1em 0 0;
+  padding: 1em 0 0;
 }
