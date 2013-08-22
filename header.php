@@ -60,7 +60,7 @@
 <div id="page" class="hfeed">
 <?php do_action( 'before' ); ?>
 	<header id="branding" role="banner">
-    <span id="site-title"><a href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">d<span class="fade">avid</span> m<span class="fade">cClure</span></a></span>
+    <span id="site-title"><a href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?></a></span>
     <?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
 	</header><!-- #branding -->
 
