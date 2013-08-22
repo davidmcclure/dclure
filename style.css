@@ -102,7 +102,11 @@ header {
   font-size: 3em;
 }
 #site-title span.fade {
-  color: #dfdfdf;
+  color: #D8DAE4;
+  -moz-transition: .2s;
+  -webkit-transition: .2s;
+  -o-transition: .2s;
+  transition: .2s;
 }
 #site-title:hover span.fade {
   color: inherit;
