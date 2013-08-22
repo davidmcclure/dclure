@@ -17,13 +17,14 @@ Use it to make something cool, have fun, and share what you've learned with othe
 /* =Fonts
 -------------------------------------------------------------- */
 @import url(http://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900);
+@import url(http://fonts.googleapis.com/css?family=Oswald:400,700,300);
 
 
 /* =Structure
 -------------------------------------------------------------- */
 
-::selection, ::-moz-selection {
-  background: #21759b;
+::selection {
+  background: #0067A2;
   color: #fff;
   text-shadow: none;
 }
@@ -91,9 +92,20 @@ Use it to make something cool, have fun, and share what you've learned with othe
 /* =Header
 -------------------------------------------------------------- */
 
+header {
+  margin-bottom: 2em;
+}
 #site-title {
   margin: 0;
-  font-weight: 500;
+  font-family: Oswald;
+  font-weight: 400;
+  font-size: 3em;
+}
+#site-title span.fade {
+  color: #dfdfdf;
+}
+#site-title:hover span.fade {
+  color: inherit;
 }
 #site-description {
   font-size: 1em;
@@ -107,7 +119,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
 #branding li, #menu-main-menu, .menu-main-menu-container {
   display: inline;
   margin: 0 1em 0 0;
-  font-size: 12px;
+  font-size: 15px;
 }
 #menu-main-menu {
   padding-left: 1em;
@@ -118,7 +130,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
 -------------------------------------------------------------- */
 
 article {
-  margin-top: 3em;
+  margin-bottom: 5em;
 }
 .entry-meta {
   clear: both;
@@ -280,11 +292,11 @@ code, .gist {
 
 /* Links */
 a, a:visited {
-  color: #21759b;
+  color: #0067A2;
   text-decoration: none;
 }
 a:hover, a:active {
-  color: #eea800;
+  /*color: #F7B819;*/
   text-decoration: underline;
 }
 
