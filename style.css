@@ -107,6 +107,9 @@ header {
 #site-title:hover span.fade {
   color: inherit;
 }
+#site-title:hover a {
+  text-decoration: none;
+}
 #site-description {
   font-size: 1em;
   margin: 0 0 1em;
