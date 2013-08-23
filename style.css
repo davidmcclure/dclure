@@ -91,9 +91,6 @@ Use it to make something cool, have fun, and share what you've learned with othe
 /* =Header
 -------------------------------------------------------------- */
 
-header {
-  margin-bottom: 2em;
-}
 #site-title {
   margin: 0;
   font-weight: bold;
@@ -121,7 +118,7 @@ header {
 -------------------------------------------------------------- */
 
 article {
-  margin-bottom: 5em;
+  margin: 2em 0;
 }
 .entry-meta {
   clear: both;
