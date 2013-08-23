@@ -97,9 +97,7 @@ header {
 }
 #site-title {
   margin: 0;
-  font-family: Oswald;
-  font-weight: 400;
-  font-size: 3em;
+  font-weight: bold;
 }
 #site-description {
   font-size: 1em;
@@ -113,7 +111,7 @@ header {
 #branding li, #menu-main-menu, .menu-main-menu-container {
   display: inline;
   margin: 0 1em 0 0;
-  font-size: 15px;
+  font-size: 14px;
 }
 #menu-main-menu {
   padding-left: 1em;
