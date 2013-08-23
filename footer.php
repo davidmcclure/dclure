@@ -15,7 +15,6 @@
 		<div id="site-generator">
 			<?php do_action( 'toolbox_credits' ); ?>
       <span>All content licensed under <a href="http://creativecommons.org/licenses/by/3.0/">CC-BY</a>.</span>
-			<?php printf( __( 'Theme based on %1$s by %2$s.', 'toolbox' ), 'Toolbox', '<a href="http://automattic.com/" rel="designer">Automattic</a>' ); ?>
 		</div>
 	</footer><!-- #colophon -->
 </div><!-- #page -->
