@@ -17,6 +17,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
 /* =Fonts
 -------------------------------------------------------------- */
 @import url(http://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900);
+@import url(http://fonts.googleapis.com/css?family=Oswald:400,300,700);
 
 
 /* =Structure
@@ -291,6 +292,13 @@ a:hover, a:active {
 /* Lists */
 ol li, #main li {
   margin: 1em 0;
+}
+
+/* Portfolio */
+.entry-content h3 {
+  font-family: Oswald;
+  font-size: 2em;
+  font-weight: 400;
 }
 
 
