@@ -18,7 +18,6 @@ Use it to make something cool, have fun, and share what you've learned with othe
 -------------------------------------------------------------- */
 @import url(http://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900);
 @import url(http://fonts.googleapis.com/css?family=Oswald:400,300,700);
-@import url(http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic);
 
 
 /* =Structure
@@ -97,7 +96,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
   margin: 0;
   font-weight: bold;
   font-family: "Oswald";
-  font-size: 3em;
+  font-size: 2em;
 }
 #site-description {
   font-size: 1em;
@@ -130,7 +129,6 @@ article {
 }
 .entry-title {
   margin: 3px 0 0;
-  font-family: "Oswald";
   font-size: 2.4em;
   font-weight: 300;
 }
