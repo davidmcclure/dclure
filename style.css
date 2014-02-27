@@ -283,7 +283,7 @@ code, .gist {
 
 /* Links */
 a, a:visited {
-  color: #3E89CF;
+  color: #137DB9;
   text-decoration: none;
 }
 a:hover, a:active {
@@ -293,11 +293,6 @@ a:hover, a:active {
 /* Lists */
 ol li, #main li {
   margin: 1em 0;
-}
-
-/* Headers */
-h1, h2, h3, h4, h5, h6 {
-  font-family: Oswald;
 }
 
 /* Portfolio */
