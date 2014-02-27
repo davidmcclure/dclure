@@ -285,7 +285,7 @@ code, .gist {
 
 /* Links */
 a, a:visited {
-  color: #449CCE;
+  color: #3E89CF;
   text-decoration: none;
 }
 a:hover, a:active {
@@ -297,15 +297,21 @@ ol li, #main li {
   margin: 1em 0;
 }
 
+/* Headers */
+h1, h2, h3, h4, h5, h6 {
+  font-family: Oswald;
+}
+
 /* Portfolio */
 #post-2987 header.entry-header {
   display: none;
 }
-.entry-content h3 {
-  font-family: Oswald;
+#post-2987 .entry-content h3 {
   font-size: 2em;
   font-weight: 300;
 }
+
+/* Headers */
 
 
 /* =Images
