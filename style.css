@@ -283,7 +283,7 @@ code, .gist {
 
 /* Links */
 a, a:visited {
-  color: #137DB9;
+  color: #0067A2;
   text-decoration: none;
 }
 a:hover, a:active {
@@ -300,11 +300,13 @@ ol li, #main li {
   display: none;
 }
 #post-2987 .entry-content h3 {
+  font-family: Oswald;
   font-size: 2em;
   font-weight: 300;
 }
-
-/* Headers */
+#post-2987 img {
+  border: 1px solid rgb(241, 241, 241);
+}
 
 
 /* =Images
