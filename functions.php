@@ -131,7 +131,6 @@ function toolbox_content_nav( $nav_id ) {
 
 	?>
 	<nav id="<?php echo $nav_id; ?>">
-		<h1 class="assistive-text section-heading"><?php _e( 'Post navigation', 'toolbox' ); ?></h1>
 
 	<?php if ( is_single() ) : // navigation links for single posts ?>
 
@@ -223,14 +222,9 @@ if ( ! function_exists( 'toolbox_posted_on' ) ) :
  * @since Toolbox 1.2
  */
 function toolbox_posted_on() {
-	printf( __( '<span class="sep"></span><a href="%1$s" title="%2$s" rel="bookmark"><time class="entry-date" datetime="%3$s" pubdate>%4$s</time></a><span class="byline"> <span class="sep"> by </span> <span class="author vcard"><a class="url fn n" href="%5$s" title="%6$s" rel="author">%7$s</a></span></span>', 'toolbox' ),
-		esc_url( get_permalink() ),
-		esc_attr( get_the_time() ),
+	printf( __( '<time class="entry-date" datetime="%1$s" pubdate>%2$s</time>', 'toolbox' ),
 		esc_attr( get_the_date( 'c' ) ),
-		esc_html( get_the_date() ),
-		esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ),
-		esc_attr( sprintf( __( 'View all posts by %s', 'toolbox' ), get_the_author() ) ),
-		esc_html( get_the_author() )
+		esc_html( get_the_date() )
 	);
 }
 endif;
