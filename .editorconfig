@@ -1,0 +1,16 @@
+# EditorConfig: http://EditorConfig.org
+
+root = true
+
+[*]
+indent_style = space
+trim_trailing_whitespace = true
+end_of_line = lf
+insert_final_newline = true
+
+[*.php]
+indent_size = 4
+
+[*.{js,less,yaml}]
+max_line_length = 80
+indent_size = 2
