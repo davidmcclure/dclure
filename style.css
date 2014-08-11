@@ -6189,6 +6189,34 @@ body {
  * @license     http://www.gnu.org/copyleft/gpl.html
  * @package     dclure
  */
+#branding {
+  margin: 4em 0;
+  font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
+  font-size: 14px;
+}
+#branding a {
+  color: #c7254e;
+}
+#branding a:hover {
+  color: #428bca;
+}
+#branding #site-title {
+  font-weight: bold;
+}
+#branding ul.menu {
+  padding: 0;
+}
+#branding ul.menu li {
+  display: inline;
+}
+#branding ul.menu li + li:before {
+  content: "/ ";
+}
+/**
+ * @copyright   2014 David McClure
+ * @license     http://www.gnu.org/copyleft/gpl.html
+ * @package     dclure
+ */
 article {
   margin: 2em 0;
 }
