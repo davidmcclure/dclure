@@ -1,5 +1,4 @@
-@import url("//fonts.googleapis.com/css?family=IM+Fell+French+Canon");
-@import url("//fonts.googleapis.com/css?family=Inconsolata:400,700");
+@import url("//fonts.googleapis.com/css?family=News+Cycle:400,700");
 @import url("//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css");
 /**
  * @copyright   2014 David McClure
@@ -889,7 +888,7 @@ html {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 body {
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: "News Cycle", Helvetica, Arial, sans-serif;
   font-size: 16px;
   line-height: 1.42857143;
   color: #333333;
@@ -6192,6 +6191,9 @@ body {
  */
 article {
   margin: 2em 0;
+}
+time {
+  color: #808080;
 }
 .entry-title {
   margin-top: 0;

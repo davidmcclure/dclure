@@ -45,9 +45,10 @@
 <body <?php body_class(); ?>>
 <div class="container">
 <?php do_action( 'before' ); ?>
-	<header id="branding" role="banner">
-    <span id="site-title"><a href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?></a></span>
-    <?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
+
+	<header id="branding" role="banner" class="row">
+        <span id="site-title"><a href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?></a></span>
+        <?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
 	</header><!-- #branding -->
 
-	<div id="main">
+	<div id="main" class="row">

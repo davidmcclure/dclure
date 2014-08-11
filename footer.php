@@ -11,7 +11,7 @@
 
 	</div><!-- #main -->
 
-	<footer id="colophon" role="contentinfo">
+	<footer id="colophon" role="contentinfo" class="row">
 		<div id="site-generator">
 			<?php do_action( 'toolbox_credits' ); ?>
       <span>All content licensed under <a href="http://creativecommons.org/licenses/by/3.0/">CC-BY</a>.</span>
