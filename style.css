@@ -6230,8 +6230,11 @@ time {
   line-height: 1;
 }
 .entry-content {
-  font-family: "freight-text-pro";
   font-size: 18px;
+}
+.entry-content p,
+.entry-content li {
+  font-family: "freight-text-pro";
 }
 .entry-content > *,
 .entry-content p,
