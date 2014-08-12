@@ -14,9 +14,10 @@
 	<footer id="colophon" role="contentinfo">
 		<div id="site-generator">
 			<?php do_action( 'toolbox_credits' ); ?>
-      <span>All content licensed under <a href="http://creativecommons.org/licenses/by/3.0/">CC-BY</a>.</span>
+            <span>All content licensed under <a href="http://creativecommons.org/licenses/by/3.0/">CC-BY</a>.</span>
 		</div>
 	</footer><!-- #colophon -->
+
 </div><!-- #page -->
 
 <?php wp_footer(); ?>

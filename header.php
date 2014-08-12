@@ -27,19 +27,25 @@
 	$site_description = get_bloginfo( 'description', 'display' );
 	if ( $site_description && ( is_home() || is_front_page() ) ) {
 		echo " | $site_description";
-  }
+    }
 
 	// Add a page number if necessary:
 	if ( $paged >= 2 || $page >= 2 ) {
 		echo ' | ' . sprintf( __( 'Page %s', 'toolbox' ), max( $paged, $page ) );
-  }
+    }
 
-	?></title>
+?></title>
+
 <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
+<link rel="shortcut icon" href="<?php bloginfo('stylesheet_directory'); ?>/favicon.ico" />
+
+<!-- Typekit. -->
+<script type="text/javascript" src="//use.typekit.net/fgt3hkt.js"></script>
+<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 
 <?php wp_head(); ?>
-<link rel="shortcut icon" href="<?php bloginfo('stylesheet_directory'); ?>/favicon.ico" />
+
 </head>
 
 <body <?php body_class(); ?>>
