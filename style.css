@@ -6250,3 +6250,9 @@ time {
 #colophon {
   margin: 2em 0;
 }
+#colophon ul {
+  padding: 0;
+}
+#colophon li {
+  list-style: none;
+}
