@@ -6242,6 +6242,9 @@ time {
   max-width: 100%;
   height: auto;
 }
+.entry-content code {
+  font-size: 14px;
+}
 /**
  * @copyright   2014 David McClure
  * @license     http://www.gnu.org/copyleft/gpl.html
