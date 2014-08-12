@@ -1394,12 +1394,12 @@ pre code {
 }
 @media (min-width: 992px) {
   .container {
-    width: 750px;
+    width: 970px;
   }
 }
 @media (min-width: 1200px) {
   .container {
-    width: 750px;
+    width: 1170px;
   }
 }
 .container-fluid {
@@ -6180,6 +6180,14 @@ button.close {
  * @license     http://www.gnu.org/copyleft/gpl.html
  * @package     dclure
  */
+.container {
+  max-width: 720px;
+}
+/**
+ * @copyright   2014 David McClure
+ * @license     http://www.gnu.org/copyleft/gpl.html
+ * @package     dclure
+ */
 body {
   font-weight: 300;
   line-height: 1.5;
@@ -6190,19 +6198,11 @@ body {
  * @package     dclure
  */
 #branding {
-  margin: 4em 0;
-  font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
-  font-size: 14px;
-}
-#branding a {
-  color: #c7254e;
-}
-#branding a:hover {
-  color: #0067a2;
+  margin: 3em 0;
 }
 #branding #site-title {
   font-weight: bold;
-  font-size: 18px;
+  font-size: 22px;
 }
 #branding ul.menu {
   padding: 0;
@@ -6234,7 +6234,8 @@ time {
   font-size: 18px;
 }
 .entry-content > *,
-.entry-content p {
+.entry-content p,
+.entry-content li {
   margin: 20px 0;
 }
 .entry-content img {
