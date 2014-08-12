@@ -71,4 +71,6 @@
 		<p class="nocomments"><?php _e( 'Comments are closed.', 'toolbox' ); ?></p>
 	<?php endif; ?>
 
+	<?php // comment_form(); ?>
+
 </div><!-- #comments -->
