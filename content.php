@@ -5,6 +5,7 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+
 	<header class="entry-header">
 		<?php if ( 'post' == get_post_type() ) : ?>
 		<div class="entry-meta">
@@ -56,4 +57,5 @@
 
 		<?php edit_post_link( __( 'Edit', 'toolbox' ), '<span class="edit-link">', '</span>' ); ?>
 	</footer><!-- #entry-meta -->
+
 </article><!-- #post-<?php the_ID(); ?> -->

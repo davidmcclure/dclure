@@ -8,6 +8,7 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class('archive'); ?>>
+
 	<header class="entry-header">
 		<?php if ( 'post' == get_post_type() ) : ?>
 		<div class="entry-meta">
@@ -42,4 +43,5 @@
 		<?php endif; // End if 'post' == get_post_type() ?>
 
 	</footer><!-- #entry-meta -->
+
 </article><!-- #post-<?php the_ID(); ?> -->

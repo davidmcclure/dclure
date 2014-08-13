@@ -5,6 +5,7 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+
 	<header class="entry-header">
 		<div class="entry-meta">
 			<?php toolbox_posted_on(); ?>
@@ -54,4 +55,5 @@
 
 		<?php edit_post_link( __( 'Edit', 'toolbox' ), '<span class="edit-link">', '</span>' ); ?>
 	</footer><!-- .entry-meta -->
+
 </article><!-- #post-<?php the_ID(); ?> -->
