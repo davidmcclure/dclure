@@ -6257,6 +6257,8 @@ time {
 .entry-content img,
 .entry-content iframe {
   max-width: 100%;
+}
+.entry-content img {
   height: auto;
 }
 .entry-content code {
