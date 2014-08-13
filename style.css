@@ -6218,6 +6218,18 @@ body {
  * @license     http://www.gnu.org/copyleft/gpl.html
  * @package     dclure
  */
+article.archive {
+  margin: 1em 0;
+}
+article.archive .entry-title {
+  margin-bottom: 0;
+  font-size: 26px;
+}
+/**
+ * @copyright   2014 David McClure
+ * @license     http://www.gnu.org/copyleft/gpl.html
+ * @package     dclure
+ */
 article {
   margin: 2em 0;
 }

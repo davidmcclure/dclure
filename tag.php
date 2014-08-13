@@ -26,7 +26,6 @@ get_header(); ?>
 				</header>
 
 				<?php rewind_posts(); ?>
-
 				<?php toolbox_content_nav( 'nav-above' ); ?>
 
 				<?php /* Start the Loop */ ?>
