@@ -6254,7 +6254,8 @@ time {
 .entry-content li {
   margin: 20px 0;
 }
-.entry-content img {
+.entry-content img,
+.entry-content iframe {
   max-width: 100%;
   height: auto;
 }
