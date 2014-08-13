@@ -6223,6 +6223,7 @@ article.archive {
 }
 article.archive .entry-title {
   margin-bottom: 0;
+  font-weight: 400;
   font-size: 26px;
 }
 /**
