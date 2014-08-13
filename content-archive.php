@@ -25,7 +25,7 @@
 				if ( $categories_list && toolbox_categorized_blog() ) :
 			?>
 			<span class="cat-links">
-				<?php printf( __( 'Posted in %1$s', 'toolbox' ), $categories_list ); ?>
+				<?php printf( __( 'Posted to %1$s', 'toolbox' ), $categories_list ); ?>
 			</span>
 			<span class="sep"> | </span>
 			<?php endif; // End if categories ?>
@@ -36,7 +36,7 @@
 				if ( $tags_list ) :
 			?>
 			<span class="tag-links">
-				<?php printf( __( 'Tagged %1$s', 'toolbox' ), $tags_list ); ?>
+				<?php printf( __( 'Tags: %1$s', 'toolbox' ), $tags_list ); ?>
 			</span>
 			<?php endif; // End if $tags_list ?>
 		<?php endif; // End if 'post' == get_post_type() ?>
