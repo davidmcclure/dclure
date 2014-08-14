@@ -6251,7 +6251,8 @@ time {
 }
 .entry-content > *,
 .entry-content p,
-.entry-content li {
+.entry-content li,
+.entry-content img {
   margin: 20px 0;
 }
 .entry-content img,
