@@ -6231,6 +6231,17 @@ article.archive .entry-title {
  * @license     http://www.gnu.org/copyleft/gpl.html
  * @package     dclure
  */
+.portfolio .entry-content > *,
+.portfolio .entry-content p,
+.portfolio .entry-content li,
+.portfolio .entry-content img {
+  margin: 10px 0;
+}
+/**
+ * @copyright   2014 David McClure
+ * @license     http://www.gnu.org/copyleft/gpl.html
+ * @package     dclure
+ */
 article {
   margin: 2em 0;
 }

@@ -44,14 +44,18 @@
 
         <!-- Project link. -->
 		<?php if ($projLink): ?>
-            <a href="<?php echo $projLink; ?>"
-                class="btn btn-primary">Launch the project</a>
+            <a href="<?php echo $projLink; ?>" class="btn btn-primary">
+                <i class="fa fa-rocket"></i>
+                Launch the project
+            </a>
 		<?php endif; ?>
 
         <!-- Post link. -->
 		<?php if ($postLink): ?>
-            <a href="<?php echo $postLink; ?>"
-                class="btn btn-primary">Read the blog post</a>
+            <a href="<?php echo $postLink; ?>" class="btn btn-primary">
+                <i class="fa fa-file-text-o"></i>
+                Read the blog post
+            </a>
 		<?php endif; ?>
 
 	</div><!-- .entry-content -->
