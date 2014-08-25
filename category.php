@@ -1,9 +1,7 @@
 <?php
+
 /**
  * The template for displaying Category Archive pages.
- *
- * @package Toolbox
- * @since Toolbox 0.1
  */
 
 get_header(); ?>
