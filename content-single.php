@@ -1,7 +1,11 @@
 <?php
+
 /**
- * @package Toolbox
+ * @copyright   2014 David McClure
+ * @license     http://www.gnu.org/copyleft/gpl.html
+ * @package     dclure
  */
+
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>

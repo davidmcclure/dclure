@@ -1,9 +1,9 @@
 <?php
+
 /**
- * The Template for displaying all single posts.
- *
- * @package Toolbox
- * @since Toolbox 0.1
+ * @copyright   2014 David McClure
+ * @license     http://www.gnu.org/copyleft/gpl.html
+ * @package     dclure
  */
 
 get_header(); ?>

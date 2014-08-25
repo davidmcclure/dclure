@@ -1,7 +1,9 @@
 <?php
 
 /**
- * The template for displaying 404 pages (Not Found).
+ * @copyright   2014 David McClure
+ * @license     http://www.gnu.org/copyleft/gpl.html
+ * @package     dclure
  */
 
 get_header(); ?>
