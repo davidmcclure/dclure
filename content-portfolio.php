@@ -12,7 +12,7 @@
   <?php $postLink = get_field('post_link'); ?>
   <?php $heroLink = $postLink ? $postLink : $projLink; ?>
 
-	<header class="entry-header">
+  <header class="entry-header">
 
     <!-- Title. -->
     <div class="entry-meta">
@@ -31,7 +31,7 @@
   </header>
 
   <!-- Content. -->
-	<div class="entry-content">
+  <div class="entry-content">
 
     <!-- Hero image. -->
     <?php if ($image = get_field('image')): ?>
@@ -45,24 +45,24 @@
     <?php endif; ?>
 
     <!-- Body. -->
-		<?php the_content(); ?>
+    <?php the_content(); ?>
 
     <!-- Project link. -->
-		<?php if ($projLink): ?>
+    <?php if ($projLink): ?>
       <a href="<?php echo $projLink; ?>" class="btn btn-primary">
         <i class="fa fa-rocket"></i>
         Launch the project
       </a>
-		<?php endif; ?>
+    <?php endif; ?>
 
     <!-- Post link. -->
-		<?php if ($postLink): ?>
+    <?php if ($postLink): ?>
       <a href="<?php echo $postLink; ?>" class="btn btn-primary">
         <i class="fa fa-file-text-o"></i>
         Read the blog post
       </a>
-		<?php endif; ?>
+    <?php endif; ?>
 
-	</div><!-- .entry-content -->
+  </div><!-- .entry-content -->
 
 </article><!-- #post-<?php the_ID(); ?> -->

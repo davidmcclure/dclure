@@ -10,9 +10,9 @@
 <meta name="viewport" content="width=device-width" />
 <title><?php
 
-	// Print the <title> tag.
-	wp_title( '|', true, 'right' );
-	bloginfo( 'name' );
+  // Print the <title> tag.
+  wp_title( '|', true, 'right' );
+  bloginfo( 'name' );
 
 ?></title>
 
@@ -32,7 +32,7 @@
 <div class="container">
 <?php do_action( 'before' ); ?>
 
-	<header id="branding" role="banner">
+  <header id="branding" role="banner">
 
     <!-- Title. -->
     <span id="site-title">
@@ -44,6 +44,6 @@
     <!-- Navigation. -->
     <?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
 
-	</header><!-- #branding -->
+  </header><!-- #branding -->
 
-	<div id="main">
+  <div id="main">

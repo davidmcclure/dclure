@@ -6,11 +6,11 @@
 
 ?>
 
-	</div><!-- #main -->
+  </div><!-- #main -->
 
   <hr />
 
-	<footer id="colophon" role="contentinfo" class="row">
+  <footer id="colophon" role="contentinfo" class="row">
     <ul>
 
       <!-- Email. -->
@@ -49,7 +49,7 @@
 
     </ul>
 
-	</footer><!-- #colophon -->
+  </footer><!-- #colophon -->
 
 </div><!-- #page -->
 
