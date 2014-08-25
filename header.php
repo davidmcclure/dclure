@@ -1,38 +1,18 @@
 <?php
+
 /**
- * The Header for our theme.
- *
- * Displays all of the <head> section and everything up till <div id="main">
- *
- * @package Toolbox
- * @since Toolbox 0.1
+ * Page header.
  */
+
 ?><!DOCTYPE html>
 <head>
 <meta charset="<?php bloginfo( 'charset' ); ?>" />
 <meta name="viewport" content="width=device-width" />
 <title><?php
 
-	/*
-	 * Print the <title> tag based on what is being viewed.
-	 */
-	global $page, $paged;
-
+	// Print the <title> tag.
 	wp_title( '|', true, 'right' );
-
-	// Add the blog name.
 	bloginfo( 'name' );
-
-	// Add the blog description for the home/front page.
-	$site_description = get_bloginfo( 'description', 'display' );
-	if ( $site_description && ( is_home() || is_front_page() ) ) {
-		echo " | $site_description";
-    }
-
-	// Add a page number if necessary:
-	if ( $paged >= 2 || $page >= 2 ) {
-		echo ' | ' . sprintf( __( 'Page %s', 'toolbox' ), max( $paged, $page ) );
-    }
 
 ?></title>
 
@@ -53,8 +33,17 @@
 <?php do_action( 'before' ); ?>
 
 	<header id="branding" role="banner">
-        <span id="site-title"><a href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?></a></span>
-        <?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
+
+    <!-- Title. -->
+    <span id="site-title">
+      <a href="<?php echo home_url( '/' ); ?>">
+        <?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>
+      </a>
+    </span>
+
+    <!-- Navigation. -->
+    <?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
+
 	</header><!-- #branding -->
 
 	<div id="main">
