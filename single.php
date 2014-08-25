@@ -11,15 +11,13 @@ get_header(); ?>
 <div id="primary">
   <div id="content" role="main">
 
-  <?php while ( have_posts() ) : the_post(); ?>
+  <?php while (have_posts()): the_post(); ?>
 
-    <?php get_template_part( 'content', 'single' ); ?>
+    <?php get_template_part('content', 'single'); ?>
 
-    <?php
-      if ( comments_open() || '0' != get_comments_number() ) {
-        comments_template( '', true );
-      }
-    ?>
+    <?php if (comments_open() || get_comments_number() != '0') {
+      comments_template('', true);
+    } ?>
 
   <?php endwhile; // end of the loop. ?>
 
