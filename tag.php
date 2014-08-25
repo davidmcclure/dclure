@@ -18,14 +18,10 @@ get_header(); ?>
     </header>
 
     <?php rewind_posts(); ?>
-    <?php toolbox_content_nav( 'nav-above' ); ?>
 
-    <?php /* Start the Loop */ ?>
     <?php while ( have_posts() ) : the_post(); ?>
       <?php get_template_part('content', 'archive'); ?>
     <?php endwhile; ?>
-
-    <?php toolbox_content_nav( 'nav-below' ); ?>
 
   <?php else : ?>
 
