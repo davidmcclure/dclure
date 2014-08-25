@@ -17,8 +17,6 @@ get_header(); ?>
       <?php get_template_part('content', 'archive'); ?>
     <?php endwhile; ?>
 
-    <?php toolbox_content_nav('nav-below'); ?>
-
   <?php else : ?>
 
     <article id="post-0" class="post no-results not-found">
