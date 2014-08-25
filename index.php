@@ -25,13 +25,13 @@ get_header(); ?>
         <h1 class="entry-title">
           <?php _e( 'Nothing Found', 'toolbox' ); ?>
         </h1>
-      </header><!-- .entry-header -->
+      </header>
 
-    </article><!-- #post-0 -->
+    </article>
 
   <?php endif; ?>
 
-  </div><!-- #content -->
-</div><!-- #primary -->
+  </div>
+</div>
 
 <?php get_footer(); ?>

@@ -19,25 +19,25 @@ get_header(); ?>
       </h1>
     </header>
 
-    <?php while ( have_posts() ) : the_post(); ?>
+    <?php while (have_posts()): the_post(); ?>
       <?php get_template_part('content', 'archive'); ?>
     <?php endwhile; ?>
 
-  <?php else : ?>
+  <?php else: ?>
 
     <article id="post-0" class="post no-results not-found">
 
       <header class="entry-header">
         <h1 class="entry-title">
-          <?php _e( 'Nothing Found', 'toolbox' ); ?>
+          <?php _e('Nothing Found', 'toolbox'); ?>
         </h1>
-      </header><!-- .entry-header -->
+      </header>
 
-    </article><!-- #post-0 -->
+    </article>
 
   <?php endif; ?>
 
-  </div><!-- #content -->
-</section><!-- #primary -->
+  </div>
+</section>
 
 <?php get_footer(); ?>

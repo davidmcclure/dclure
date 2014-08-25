@@ -16,12 +16,12 @@
 
   <header class="entry-header">
 
-    <!-- Title. -->
+    <!-- Date. -->
     <div class="entry-meta">
       <?php toolbox_posted_on(); ?>
     </div>
 
-    <!-- Date. -->
+    <!-- Title. -->
     <h1 class="entry-title">
       <?php if ($heroLink): ?>
         <a href="<?php echo $heroLink; ?>"><?php the_title(); ?></a>
@@ -65,6 +65,6 @@
       </a>
     <?php endif; ?>
 
-  </div><!-- .entry-content -->
+  </div>
 
-</article><!-- #post-<?php the_ID(); ?> -->
+</article>

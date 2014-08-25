@@ -46,6 +46,6 @@
     <!-- Navigation. -->
     <?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
 
-  </header><!-- #branding -->
+  </header>
 
   <div id="main">

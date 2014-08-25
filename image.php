@@ -38,9 +38,9 @@ get_header(); ?>
             <?php echo get_the_title($post->post_parent); ?>
           </a>
 
-        </div><!-- .entry-meta -->
+        </div>
 
-      </header><!-- .entry-header -->
+      </header>
 
       <div class="entry-content">
         <div class="entry-attachment">
@@ -51,13 +51,13 @@ get_header(); ?>
               <?php echo wp_get_attachment_image($post->ID, 1200); ?>
             </a>
 
-          </div><!-- .attachment -->
-        </div><!-- .entry-attachment -->
-      </div><!-- .entry-content -->
+          </div>
+        </div>
+      </div>
 
   <?php endwhile; // end of the loop. ?>
 
-  </div><!-- #content -->
-</div><!-- #primary -->
+  </div>
+</div>
 
 <?php get_footer(); ?>

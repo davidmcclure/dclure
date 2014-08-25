@@ -51,7 +51,7 @@
 
     </ul>
 
-  </footer><!-- #colophon -->
+  </footer>
 
 </div><!-- #page -->
 

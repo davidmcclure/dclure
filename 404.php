@@ -15,9 +15,9 @@ get_header(); ?>
       <header class="entry-header">
         <h1 class="entry-title">{ }</h1>
       </header>
-    </article><!-- #post-0 -->
+    </article>
 
-  </div><!-- #content -->
-</div><!-- #primary -->
+  </div>
+</div>
 
 <?php get_footer(); ?>

@@ -11,15 +11,20 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class('archive'); ?>>
 
   <header class="entry-header">
+
+    <!-- Date. -->
     <?php if (get_post_type() == 'post'): ?>
     <div class="entry-meta">
       <?php toolbox_posted_on(); ?>
-    </div><!-- .entry-meta -->
+    </div>
     <?php endif; ?>
+
+    <!-- Title. -->
     <h1 class="entry-title">
       <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
     </h1>
-  </header><!-- .entry-header -->
+
+  </header>
 
   <footer class="entry-meta">
     <?php if (get_post_type() == 'post'): ?>
@@ -47,6 +52,6 @@
 
     <?php endif; ?>
 
-  </footer><!-- #entry-meta -->
+  </footer>
 
-</article><!-- #post-<?php the_ID(); ?> -->
+</article>

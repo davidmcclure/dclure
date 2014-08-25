@@ -11,15 +11,20 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
   <header class="entry-header">
+
+    <!-- Date. -->
     <div class="entry-meta">
       <?php toolbox_posted_on(); ?>
-    </div><!-- .entry-meta -->
+    </div>
+
+    <!-- Title. -->
     <h1 class="entry-title"><?php the_title(); ?></h1>
-  </header><!-- .entry-header -->
+
+  </header>
 
   <div class="entry-content">
     <?php the_content(); ?>
-  </div><!-- .entry-content -->
+  </div>
 
   <footer class="entry-meta">
     <?php
@@ -55,6 +60,6 @@
 
     ?>
 
-  </footer><!-- .entry-meta -->
+  </footer>
 
-</article><!-- #post-<?php the_ID(); ?> -->
+</article>
