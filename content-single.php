@@ -29,14 +29,14 @@
   <footer class="entry-meta">
     <?php
 
-      $category_list = get_the_category_list(__(', ', 'toolbox'));
+      $category_list = get_the_category_list(', ');
       $tag_list = get_the_tag_list('', ', ');
 
       if (!toolbox_categorized_blog()) {
 
         // Just one category.
         if ($tag_list != '') {
-          $meta_text = __('Tagged with %2$s.', 'toolbox');
+          $meta_text = 'Tagged with %2$s.';
         } else {
           $meta_text = '';
         }
@@ -45,9 +45,9 @@
 
         // More than one category.
         if ($tag_list != '') {
-          $meta_text = __('Posted in %1$s, tagged with %2$s.', 'toolbox');
+          $meta_text = 'Posted in %1$s, tagged with %2$s.';
         } else {
-          $meta_text = __('Posted in %1$s.', 'toolbox');
+          $meta_text = 'Posted in %1$s.';
         }
 
       }

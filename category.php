@@ -28,9 +28,7 @@ get_header(); ?>
     <article id="post-0" class="post no-results not-found">
 
       <header class="entry-header">
-        <h1 class="entry-title">
-          <?php _e('Nothing Found', 'toolbox'); ?>
-        </h1>
+        <h1 class="entry-title">{ }</h1>
       </header>
 
     </article>

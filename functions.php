@@ -24,7 +24,7 @@
  */
 
 
-if ( ! function_exists( 'toolbox_setup' ) ):
+if (!function_exists('toolbox_setup')):
 /**
  * Sets up theme defaults and registers support for various WordPress features.
  *
@@ -36,46 +36,33 @@ if ( ! function_exists( 'toolbox_setup' ) ):
  * functions.php file.
  */
 function toolbox_setup() {
-	/**
-	 * Make theme available for translation
-	 * Translations can be filed in the /languages/ directory
-	 * If you're building a theme based on toolbox, use a find and replace
-	 * to change 'toolbox' to the name of your theme in all the template files
-	 */
-	load_theme_textdomain( 'toolbox', get_template_directory() . '/languages' );
-
-	$locale = get_locale();
-	$locale_file = get_template_directory() . "/languages/$locale.php";
-	if ( is_readable( $locale_file ) )
-		require_once( $locale_file );
 
 	/**
 	 * Add default posts and comments RSS feed links to head
 	 */
-	add_theme_support( 'automatic-feed-links' );
+	add_theme_support('automatic-feed-links');
 
 	/**
 	 * This theme uses wp_nav_menu() in one location.
 	 */
-	register_nav_menus( array(
-		'primary' => __( 'Primary Menu', 'toolbox' ),
-	) );
+	register_nav_menus(array('primary' => 'Primary Menu'));
 
 	/**
 	 * Add support for the Aside and Gallery Post Formats
 	 */
-	add_theme_support( 'post-formats', array( 'aside', 'image', 'gallery' ) );
+	add_theme_support('post-formats', array('aside', 'image', 'gallery'));
+
 }
-endif; // toolbox_setup
+endif;
 
 
 /**
  * Register the theme.
  */
-add_action( 'after_setup_theme', 'toolbox_setup' );
+add_action('after_setup_theme', 'toolbox_setup');
 
 
-if ( ! function_exists( 'toolbox_posted_on' ) ) :
+if (!function_exists('toolbox_posted_on')):
 /**
  * Prints HTML with meta information for the current post-date/time and author.
  * Create your own toolbox_posted_on to override in a child theme
@@ -83,9 +70,9 @@ if ( ! function_exists( 'toolbox_posted_on' ) ) :
  * @since Toolbox 1.2
  */
 function toolbox_posted_on() {
-	printf( __( '<time class="entry-date" datetime="%1$s" pubdate>%2$s</time>', 'toolbox' ),
-		esc_attr( get_the_date( 'c' ) ),
-		esc_html( get_the_date() )
+	printf('<time class="entry-date" datetime="%1$s" pubdate>%2$s</time>',
+		esc_attr(get_the_date('c')),
+		esc_html(get_the_date())
 	);
 }
 endif;
@@ -97,25 +84,26 @@ endif;
  * @since Toolbox 1.2
  */
 function toolbox_categorized_blog() {
-	if ( false === ( $all_the_cool_cats = get_transient( 'all_the_cool_cats' ) ) ) {
+
+	if (false === ($all_the_cool_cats = get_transient('all_the_cool_cats'))) {
+
 		// Create an array of all the categories that are attached to posts
-		$all_the_cool_cats = get_categories( array(
+		$all_the_cool_cats = get_categories(array(
 			'hide_empty' => 1,
-		) );
+		));
 
 		// Count the number of categories that are attached to the posts
-		$all_the_cool_cats = count( $all_the_cool_cats );
+		$all_the_cool_cats = count($all_the_cool_cats);
 
-		set_transient( 'all_the_cool_cats', $all_the_cool_cats );
+		set_transient('all_the_cool_cats', $all_the_cool_cats);
 	}
 
-	if ( '1' != $all_the_cool_cats ) {
-		// This blog has more than 1 category so toolbox_categorized_blog should return true
-		return true;
+	if ($all_the_cool_cats != '1') {
+		return true; // More than 1 category.
 	} else {
-		// This blog has only 1 category so toolbox_categorized_blog should return false
-		return false;
+		return false; // Just 1 category.
 	}
+
 }
 
 
@@ -125,8 +113,7 @@ function toolbox_categorized_blog() {
  * @since Toolbox 1.2
  */
 function toolbox_category_transient_flusher() {
-	// Like, beat it. Dig?
-	delete_transient( 'all_the_cool_cats' );
+	delete_transient('all_the_cool_cats');
 }
-add_action( 'edit_category', 'toolbox_category_transient_flusher' );
-add_action( 'save_post', 'toolbox_category_transient_flusher' );
+add_action('edit_category', 'toolbox_category_transient_flusher');
+add_action('save_post', 'toolbox_category_transient_flusher');

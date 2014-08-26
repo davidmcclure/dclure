@@ -31,22 +31,22 @@
 
       <!-- Categories. -->
       <?php
-        $categories_list = get_the_category_list(__( ', ', 'toolbox'));
+        $categories_list = get_the_category_list(', ');
         if ($categories_list && toolbox_categorized_blog()):
       ?>
       <span class="cat-links">
-        <?php printf(__('Posted to %1$s', 'toolbox'), $categories_list); ?>
+        <?php printf('Posted to %1$s', $categories_list); ?>
       </span>
       <span class="sep"> | </span>
       <?php endif; ?>
 
       <!-- Tags. -->
       <?php
-        $tags_list = get_the_tag_list('', __(', ', 'toolbox'));
+        $tags_list = get_the_tag_list('', ', ');
         if ($tags_list):
       ?>
       <span class="tag-links">
-        <?php printf(__('Tags: %1$s', 'toolbox'), $tags_list); ?>
+        <?php printf('Tags: %1$s', $tags_list); ?>
       </span>
       <?php endif; ?>
 

@@ -20,7 +20,7 @@ get_header(); ?>
 
         <div class="entry-meta">
 
-          <?php $metadata = wp_get_attachment_metadata(); ?>
+          <?php $md = wp_get_attachment_metadata(); ?>
 
           <!-- Date. -->
           <span>Published</span>
@@ -29,7 +29,7 @@ get_header(); ?>
           <!-- Size. -->
           <span>at</span>
           <a href="<?php echo wp_get_attachment_url(); ?>">
-            <?php echo $metadata['width']; ?> x <?php echo $metadata['height']; ?>
+            <?php echo $md['width']; ?> x <?php echo $md['height']; ?>
           </a>
 
           <!-- Post. -->
