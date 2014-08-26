@@ -85,24 +85,21 @@ endif;
  */
 function toolbox_categorized_blog() {
 
-	if (false === ($all_the_cool_cats = get_transient('all_the_cool_cats'))) {
+  $count = get_transient('category_count');
 
-		// Create an array of all the categories that are attached to posts
-		$all_the_cool_cats = get_categories(array(
-			'hide_empty' => 1,
+	if (!$count) {
+
+    // Query for categories.
+		$categories = get_categories(array(
+			'hide_empty' => 1
 		));
 
-		// Count the number of categories that are attached to the posts
-		$all_the_cool_cats = count($all_the_cool_cats);
-
-		set_transient('all_the_cool_cats', $all_the_cool_cats);
+    // Set the count.
+		$count = count($categories);
+		set_transient('category_count', $count);
 	}
 
-	if ($all_the_cool_cats != '1') {
-		return true; // More than 1 category.
-	} else {
-		return false; // Just 1 category.
-	}
+  return $count > 1;
 
 }
 
@@ -113,7 +110,7 @@ function toolbox_categorized_blog() {
  * @since Toolbox 1.2
  */
 function toolbox_category_transient_flusher() {
-	delete_transient('all_the_cool_cats');
+	delete_transient('category_count');
 }
 add_action('edit_category', 'toolbox_category_transient_flusher');
 add_action('save_post', 'toolbox_category_transient_flusher');

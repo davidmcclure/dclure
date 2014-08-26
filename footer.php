@@ -15,10 +15,10 @@
   <footer id="colophon" role="contentinfo" class="row">
     <ul>
 
-      <!-- Email. -->
+      <!-- GitHub. -->
       <li>
-        <a href="mailto:davidwilliammcclure@gmail.com">
-          <i class="fa fa-send fa-fw"></i> davidwilliammcclure@gmail.com
+        <a href="https://github.com/davidmcclure">
+          <i class="fa fa-github fa-fw"></i> davidmcclure
         </a>
       </li>
 
@@ -26,13 +26,6 @@
       <li>
         <a href="https://twitter.com/clured">
           <i class="fa fa-twitter fa-fw"></i> clured
-        </a>
-      </li>
-
-      <!-- GitHub. -->
-      <li>
-        <a href="https://github.com/davidmcclure">
-          <i class="fa fa-github fa-fw"></i> davidmcclure
         </a>
       </li>
 
