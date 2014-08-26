@@ -6,7 +6,6 @@
  */
 
 
-if (!function_exists('toolbox_setup')):
 /**
  * Register the theme.
  */
@@ -22,22 +21,11 @@ function toolbox_setup() {
 	 */
 	register_nav_menus(array('primary' => 'Primary Menu'));
 
-	/**
-	 * Add support for the Aside and Gallery Post Formats
-	 */
-	add_theme_support('post-formats', array('aside', 'image', 'gallery'));
-
 }
-endif;
 
-
-/**
- * Register the theme.
- */
 add_action('after_setup_theme', 'toolbox_setup');
 
 
-if (!function_exists('toolbox_posted_on')):
 /**
  * Print HTML with meta information for the current date/time and author.
  */
@@ -47,7 +35,6 @@ function toolbox_posted_on() {
 		esc_html(get_the_date())
 	);
 }
-endif;
 
 
 /**
@@ -80,5 +67,6 @@ function toolbox_categorized_blog() {
 function toolbox_category_transient_flusher() {
 	delete_transient('category_count');
 }
+
 add_action('edit_category', 'toolbox_category_transient_flusher');
 add_action('save_post', 'toolbox_category_transient_flusher');
