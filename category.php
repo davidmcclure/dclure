@@ -11,7 +11,7 @@ get_header(); ?>
 <section id="primary">
   <div id="content" role="main">
 
-  <?php if (have_posts()) : ?>
+  <?php if (have_posts()): ?>
 
     <header class="page-header">
       <h1 class="page-title">

@@ -8,18 +8,18 @@
 
 ?><!DOCTYPE html>
 <head>
-<meta charset="<?php bloginfo( 'charset' ); ?>" />
+<meta charset="<?php bloginfo('charset'); ?>" />
 <meta name="viewport" content="width=device-width" />
 <title><?php
 
   // Print the <title> tag.
-  wp_title( '|', true, 'right' );
-  bloginfo( 'name' );
+  wp_title('|', true, 'right');
+  bloginfo('name');
 
 ?></title>
 
-<link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
-<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
+<link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo('stylesheet_url'); ?>" />
+<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
 <link rel="shortcut icon" href="<?php bloginfo('stylesheet_directory'); ?>/favicon.ico" />
 
 <!-- Typekit. -->
@@ -32,19 +32,19 @@
 
 <body <?php body_class(); ?>>
 <div class="container">
-<?php do_action( 'before' ); ?>
+<?php do_action('before'); ?>
 
   <header id="branding" role="banner">
 
     <!-- Title. -->
     <span id="site-title">
-      <a href="<?php echo home_url( '/' ); ?>">
-        <?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>
+      <a href="<?php echo home_url('/'); ?>">
+        <?php echo esc_attr(get_bloginfo('name', 'display')); ?>
       </a>
     </span>
 
     <!-- Navigation. -->
-    <?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
+    <?php wp_nav_menu(array('theme_location' => 'primary')); ?>
 
   </header>
 

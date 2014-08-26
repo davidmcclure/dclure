@@ -13,7 +13,7 @@ get_header(); ?>
 
   <?php if (have_posts()) : ?>
 
-    <?php while (have_posts()) : the_post(); ?>
+    <?php while (have_posts()): the_post(); ?>
       <?php get_template_part('content', 'archive'); ?>
     <?php endwhile; ?>
 
@@ -23,7 +23,7 @@ get_header(); ?>
 
       <header class="entry-header">
         <h1 class="entry-title">
-          <?php _e( 'Nothing Found', 'toolbox' ); ?>
+          <?php _e('Nothing Found', 'toolbox'); ?>
         </h1>
       </header>
 

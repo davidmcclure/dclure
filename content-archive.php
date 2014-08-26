@@ -43,7 +43,7 @@
       <!-- Tags. -->
       <?php
         $tags_list = get_the_tag_list('', __(', ', 'toolbox'));
-        if ( $tags_list ) :
+        if ($tags_list):
       ?>
       <span class="tag-links">
         <?php printf(__('Tags: %1$s', 'toolbox'), $tags_list); ?>

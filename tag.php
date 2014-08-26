@@ -11,7 +11,7 @@ get_header(); ?>
 <section id="primary">
   <div id="content" role="main">
 
-  <?php if ( have_posts() ) : ?>
+  <?php if (have_posts()): ?>
 
     <header class="page-header">
       <h1 class="page-title">
@@ -21,7 +21,7 @@ get_header(); ?>
 
     <?php rewind_posts(); ?>
 
-    <?php while ( have_posts() ) : the_post(); ?>
+    <?php while (have_posts()): the_post(); ?>
       <?php get_template_part('content', 'archive'); ?>
     <?php endwhile; ?>
 
@@ -31,7 +31,7 @@ get_header(); ?>
 
       <header class="entry-header">
         <h1 class="entry-title">
-          <?php _e( 'Nothing Found', 'toolbox' ); ?>
+          <?php _e('Nothing Found', 'toolbox'); ?>
         </h1>
       </header>
 

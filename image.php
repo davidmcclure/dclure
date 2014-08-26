@@ -11,7 +11,7 @@ get_header(); ?>
 <div id="primary" class="image-attachment">
   <div id="content" role="main">
 
-  <?php while (have_posts()) : the_post(); ?>
+  <?php while (have_posts()): the_post(); ?>
 
     <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
       <header class="entry-header">
@@ -55,7 +55,7 @@ get_header(); ?>
         </div>
       </div>
 
-  <?php endwhile; // end of the loop. ?>
+  <?php endwhile; ?>
 
   </div>
 </div>

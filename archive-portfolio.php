@@ -11,7 +11,7 @@ get_header(); ?>
 <section id="primary">
   <div id="content" role="main" class="portfolio">
 
-  <?php if (have_posts()) : ?>
+  <?php if (have_posts()): ?>
 
     <?php rewind_posts(); ?>
 
