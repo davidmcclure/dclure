@@ -18,9 +18,8 @@
 
 ?></title>
 
-<link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo('stylesheet_url'); ?>" />
 <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
-<link rel="shortcut icon" href="<?php bloginfo('stylesheet_directory'); ?>/favicon.ico" />
+<link rel="icon" href="<?php bloginfo('stylesheet_directory'); ?>/favicon.ico" />
 
 <!-- Typekit. -->
 <script type="text/javascript" src="//use.typekit.net/fgt3hkt.js"></script>

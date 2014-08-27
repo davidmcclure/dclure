@@ -11,10 +11,9 @@ module.exports = {
     paths: ['node_modules']
   },
 
-  dist: {
-    files: {
-      'style.css': 'assets/stylesheets/style.less'
-    }
+  style: {
+    src: 'assets/stylesheets/style.less',
+    dest: 'dist/style.css'
   }
 
 };

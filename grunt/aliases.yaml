@@ -4,4 +4,5 @@ compile:
 
 compile:min:
   - compile
+  - uglify
   - cssmin

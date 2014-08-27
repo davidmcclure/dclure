@@ -1,16 +1,19 @@
 
 /**
  * @package     omeka
- * @subpackage  neatline-Neatlight
+ * @subpackage  neatline
  * @copyright   2014 Rector and Board of Visitors, University of Virginia
  * @license     http://www.apache.org/licenses/LICENSE-2.0.html
  */
 
 module.exports = {
 
-  style: {
-    src: '<%= less.style.dest %>',
-    dest: '<%= less.style.dest %>'
+  tags: {
+    src: [
+      'node_modules/jquery/dist/jquery.js',
+      'assets/javascripts/tags.js'
+    ],
+    dest: 'dist/tags.js'
   }
 
 };
