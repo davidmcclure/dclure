@@ -22,8 +22,7 @@ $(function() {
     edges: _.map(window._edges, function(e, i) {
       return {
         from: e[0],
-        to: e[1],
-        color: '#b8d7e9'
+        to: e[1]
       };
     })
 
@@ -42,8 +41,7 @@ $(function() {
       springConstant: 0.2
     },
 
-    stabilizationIterations: 250,
-    stabilize: false
+    stabilizationIterations: 250
 
   });
 
