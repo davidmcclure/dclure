@@ -37,7 +37,6 @@
       <span class="cat-links">
         <?php printf('Posted to %1$s', $categories_list); ?>
       </span>
-      <span class="sep"> | </span>
       <?php endif; ?>
 
       <!-- Tags. -->
@@ -45,6 +44,7 @@
         $tags_list = get_the_tag_list('', ', ');
         if ($tags_list):
       ?>
+      <span class="sep"> | </span>
       <span class="tag-links">
         <?php printf('Tags: %1$s', $tags_list); ?>
       </span>
