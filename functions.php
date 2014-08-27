@@ -114,8 +114,8 @@ function set_tag_edges() {
         for ($i=0; $i<$tag_count; $i++) {
             for ($j=$i+1; $j<$tag_count; $j++) {
                 $edges[] = array(
-                    (string) $tags[$i]->term_id,
-                    (string) $tags[$j]->term_id
+                    $tags[$i]->term_id,
+                    $tags[$j]->term_id
                 );
             }
         }
