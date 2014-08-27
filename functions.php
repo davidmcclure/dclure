@@ -29,23 +29,6 @@ add_action('wp_enqueue_scripts', 'toolbox_enqueue_css');
 
 
 /**
- * Queue javascripts.
- */
-function toolbox_enqueue_js() {
-
-    $root = get_template_directory_uri();
-
-    // Only load the tags script on the front page.
-    if (is_home()) {
-        wp_enqueue_script('tags', $root.'/dist/tags.js');
-    }
-
-}
-
-add_action('wp_enqueue_scripts', 'toolbox_enqueue_js');
-
-
-/**
  * Print HTML with meta information for the current date/time and author.
  */
 function toolbox_posted_on() {
@@ -89,58 +72,3 @@ function toolbox_category_transient_flusher() {
 
 add_action('edit_category', 'toolbox_category_transient_flusher');
 add_action('save_post', 'toolbox_category_transient_flusher');
-
-
-/**
- * Cache JSON for the tag network edges.
- */
-function set_tag_edges() {
-
-    $edges = array();
-
-    // Get 100 posts.
-    $ids = get_posts(array(
-        'posts_per_page' => 100,
-        'fields' => 'ids'
-    ));
-
-    foreach ($ids as $id) {
-
-        // Get tags on the post.
-        $tags = wp_get_post_tags($id);
-        $tag_count = count($tags);
-
-        // Get all unique pairs.
-        for ($i=0; $i<$tag_count; $i++) {
-            for ($j=$i+1; $j<$tag_count; $j++) {
-                $edges[] = array(
-                    $tags[$i]->term_id,
-                    $tags[$j]->term_id
-                );
-            }
-        }
-
-    }
-
-    // Set the edges JSON.
-    update_option('tag_edges', json_encode($edges));
-
-}
-
-add_action('save_post', 'set_tag_edges');
-
-
-/**
- * Cache JSON for the tag network nodes.
- */
-function set_tag_nodes() {
-
-    // Get all tags.
-    $tags = get_terms(array('post_tag'));
-
-    // Set the nodes JSON.
-    update_option('tag_nodes', json_encode($tags));
-
-}
-
-add_action('save_post', 'set_tag_nodes');
