@@ -8,6 +8,8 @@
 
 get_header(); ?>
 
+<div id="tags"></div>
+
 <div id="primary">
   <div id="content" role="main">
 
