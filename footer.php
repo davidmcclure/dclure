@@ -53,7 +53,8 @@
 <!-- Network edges. -->
 <?php if (is_home()): ?>
   <script>
-    window._edges = <?php echo get_option('tag_edges'); ?>
+    window._nodes = <?php echo get_option('tag_nodes'); ?>;
+    window._edges = <?php echo get_option('tag_edges'); ?>;
   </script>
 <?php endif; ?>
 

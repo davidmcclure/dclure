@@ -92,9 +92,9 @@ add_action('save_post', 'toolbox_category_transient_flusher');
 
 
 /**
- * Construct JSON for the tag network.
+ * Cache JSON for the tag network edges.
  */
-function build_tag_graph() {
+function set_tag_edges() {
 
     $edges = array();
 
@@ -113,7 +113,10 @@ function build_tag_graph() {
         // Get all unique pairs.
         for ($i=0; $i<$tag_count; $i++) {
             for ($j=$i+1; $j<$tag_count; $j++) {
-                $edges[] = array($tags[$i]->name, $tags[$j]->name);
+                $edges[] = array(
+                    (string) $tags[$i]->term_id,
+                    (string) $tags[$j]->term_id
+                );
             }
         }
 
@@ -124,4 +127,20 @@ function build_tag_graph() {
 
 }
 
-add_action('save_post', 'build_tag_graph');
+add_action('save_post', 'set_tag_edges');
+
+
+/**
+ * Cache JSON for the tag network nodes.
+ */
+function set_tag_nodes() {
+
+    // Get all tags.
+    $tags = get_terms(array('post_tag'));
+
+    // Set the nodes JSON.
+    update_option('tag_nodes', json_encode($tags));
+
+}
+
+add_action('save_post', 'set_tag_nodes');

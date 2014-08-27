@@ -1,5 +1,6 @@
 
 compile:
+  - concat
   - less
 
 compile:min:

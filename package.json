@@ -14,6 +14,8 @@
   },
   "dependencies": {
     "bootstrap": "^3.2.0",
-    "jquery": "^2.1.1"
+    "jquery": "^2.1.1",
+    "lodash": "^2.4.1",
+    "sigma": "^1.0.3"
   }
 }
