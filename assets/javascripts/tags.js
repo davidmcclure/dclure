@@ -7,28 +7,37 @@
 
 $(function() {
 
-  var s = new sigma('tags');
+  var data = {
 
-  // Register nodes.
-  _.each(window._nodes, function(n) {
-    s.graph.addNode({
-      id: n.term_id,
-      label: n.name,
-      color: '#0067a2',
-      size: 1
-    });
+    // Register nodes.
+    nodes: _.map(window._nodes, function(n) {
+      return {
+        id: n.term_id,
+        radius: (Math.log(n.count)+1) * 10,
+        label: n.name
+      };
+    }),
+
+    // Register edges.
+    edges: _.map(window._edges, function(e, i) {
+      return { from: e[0], to: e[1] };
+    })
+
+  };
+
+  var network = new vis.Network($('#tags')[0], data, {
+
+    nodes: {
+      color: '#e6e6e6',
+      fontFace: 'freight-sans-pro',
+      fontSize: 20,
+      shape: 'dot'
+    },
+
+    physics: {
+      springConstant: 0.2
+    }
+
   });
-
-  // Register edges.
-  _.each(window._edges, function(e, i) {
-    s.graph.addEdge({
-      id: 'e'+i,
-      source: e[0],
-      target: e[1]
-    });
-  });
-
-  s.refresh();
-  s.startForceAtlas2();
 
 });

@@ -11,11 +11,8 @@ module.exports = {
   tags: {
     src: [
       'node_modules/jquery/dist/jquery.js',
+      'node_modules/vis/dist/vis.js',
       'node_modules/lodash/dist/lodash.js',
-      'node_modules/sigma/build/sigma.min.js',
-      'node_modules/sigma/build/plugins/sigma.layout.forceAtlas2.min.js',
-      'node_modules/sigma/build/plugins/sigma.plugins.animate.min.js',
-      'node_modules/sigma/build/plugins/sigma.plugins.dragNodes.min.js',
       'assets/javascripts/tags.js'
     ],
     dest: 'dist/tags.js'
