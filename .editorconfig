@@ -9,6 +9,7 @@ trim_trailing_whitespace = true
 end_of_line = lf
 insert_final_newline = true
 indent_size = 2
-
-;[*.{js,less,yaml}]
 max_line_length = 80
+
+[functions.php]
+indent_size = 4

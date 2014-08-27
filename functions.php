@@ -42,21 +42,21 @@ function toolbox_posted_on() {
  */
 function toolbox_categorized_blog() {
 
-  $count = get_transient('category_count');
+    $count = get_transient('category_count');
 
 	if (!$count) {
 
-    // Query for categories.
+        // Query for categories.
 		$categories = get_categories(array(
 			'hide_empty' => 1
 		));
 
-    // Set the count.
+        // Set the count.
 		$count = count($categories);
 		set_transient('category_count', $count);
 	}
 
-  return $count > 1;
+    return $count > 1;
 
 }
 
@@ -70,3 +70,39 @@ function toolbox_category_transient_flusher() {
 
 add_action('edit_category', 'toolbox_category_transient_flusher');
 add_action('save_post', 'toolbox_category_transient_flusher');
+
+
+/**
+ * Construct JSON for the tag network.
+ */
+function build_tag_graph() {
+
+    $edges = array();
+
+    // Get 100 posts.
+    $ids = get_posts(array(
+        'posts_per_page' => 100,
+        'fields' => 'ids'
+    ));
+
+    foreach ($ids as $id) {
+
+        // Get tags on the post.
+        $tags = wp_get_post_tags($id);
+        $tag_count = count($tags);
+
+        // Get all unique pairs.
+        for ($i=0; $i<$tag_count; $i++) {
+            for ($j=$i+1; $j<$tag_count; $j++) {
+                $edges[] = array($tags[$i]->name, $tags[$j]->name);
+            }
+        }
+
+    }
+
+    // Set the edges JSON.
+    update_option('tag_edges', json_encode($edges));
+
+}
+
+add_action('save_post', 'build_tag_graph');
