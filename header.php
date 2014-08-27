@@ -22,7 +22,7 @@
 <link rel="icon" href="<?php bloginfo('stylesheet_directory'); ?>/favicon.ico" />
 
 <!-- Typekit. -->
-<script type="text/javascript" src="//use.typekit.net/fgt3hkt.js"></script>
+<script type="text/javascript" src="//use.typekit.net/oiq4ebg.js"></script>
 <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 
 <?php wp_head(); ?>
