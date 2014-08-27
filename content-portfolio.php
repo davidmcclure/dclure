@@ -61,7 +61,7 @@
     <?php if ($postLink): ?>
       <a href="<?php echo $postLink; ?>" class="btn btn-primary">
         <i class="fa fa-file-text-o"></i>
-        Read the blog post
+        Read the post
       </a>
     <?php endif; ?>
 
