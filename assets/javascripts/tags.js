@@ -20,7 +20,11 @@ $(function() {
 
     // Register edges.
     edges: _.map(window._edges, function(e, i) {
-      return { from: e[0], to: e[1] };
+      return {
+        from: e[0],
+        to: e[1],
+        color: '#b8d7e9'
+      };
     })
 
   };
@@ -29,14 +33,17 @@ $(function() {
 
     nodes: {
       color: '#e6e6e6',
+      shape: 'dot',
       fontFace: 'freight-sans-pro',
-      fontSize: 20,
-      shape: 'dot'
+      fontSize: 24
     },
 
     physics: {
       springConstant: 0.2
-    }
+    },
+
+    stabilizationIterations: 250,
+    stabilize: false
 
   });
 
