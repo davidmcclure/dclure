@@ -33,7 +33,7 @@
 
     <ul>
 
-      <!-- Poesy pure. -->
+      <!-- Dylan. -->
       <li>Yes to dance beneath the diamond sky.</li>
 
       <!-- License. -->
@@ -46,9 +46,16 @@
 
   </footer>
 
-</div><!-- #page -->
+</div>
 
 <?php wp_footer(); ?>
+
+<!-- Network edges. -->
+<?php if (is_home()): ?>
+  <script>
+    window._edges = <?php echo get_option('tag_edges'); ?>
+  </script>
+<?php endif; ?>
 
 </body>
 </html>
