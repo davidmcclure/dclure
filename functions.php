@@ -10,8 +10,8 @@
  * Register the theme.
  */
 function toolbox_setup() {
-	add_theme_support('automatic-feed-links');
-	register_nav_menus(array('primary' => 'Primary Menu'));
+    add_theme_support('automatic-feed-links');
+    register_nav_menus(array('primary' => 'Primary Menu'));
 }
 
 add_action('after_setup_theme', 'toolbox_setup');
@@ -32,10 +32,10 @@ add_action('wp_enqueue_scripts', 'toolbox_enqueue_css');
  * Print HTML with meta information for the current date/time and author.
  */
 function toolbox_posted_on() {
-	printf('<time class="entry-date" datetime="%1$s" pubdate>%2$s</time>',
-		esc_attr(get_the_date('c')),
-		esc_html(get_the_date())
-	);
+    printf('<time class="entry-date" datetime="%1$s" pubdate>%2$s</time>',
+        esc_attr(get_the_date('c')),
+        esc_html(get_the_date())
+    );
 }
 
 
@@ -46,17 +46,17 @@ function toolbox_categorized_blog() {
 
     $count = get_transient('category_count');
 
-	if (!$count) {
+    if (!$count) {
 
         // Query for categories.
-		$categories = get_categories(array(
-			'hide_empty' => 1
-		));
+        $categories = get_categories(array(
+            'hide_empty' => 1
+        ));
 
         // Set the count.
-		$count = count($categories);
-		set_transient('category_count', $count);
-	}
+        $count = count($categories);
+        set_transient('category_count', $count);
+    }
 
     return $count > 1;
 
@@ -67,7 +67,7 @@ function toolbox_categorized_blog() {
  * Flush out the transients used in toolbox_categorized_blog
  */
 function toolbox_category_transient_flusher() {
-	delete_transient('category_count');
+    delete_transient('category_count');
 }
 
 add_action('edit_category', 'toolbox_category_transient_flusher');
