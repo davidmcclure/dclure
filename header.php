@@ -29,9 +29,7 @@
 
     <!-- Title. -->
     <span id="site-title">
-      <a href="<?php echo home_url('/'); ?>">
-        <?php echo esc_attr(get_bloginfo('name', 'display')); ?>
-      </a>
+      <a href="<?php echo home_url('/'); ?>">dm</a>
     </span>
 
     <!-- Navigation. -->
