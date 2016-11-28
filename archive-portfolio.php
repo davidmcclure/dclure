@@ -1,12 +1,5 @@
-<?php
 
-/**
- * @copyright   2014 David McClure
- * @license     http://www.gnu.org/copyleft/gpl.html
- * @package     dclure
- */
-
-get_header(); ?>
+<?php get_header(); ?>
 
 <section id="primary">
   <div id="content" role="main" class="portfolio">

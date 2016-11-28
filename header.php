@@ -1,12 +1,4 @@
-<?php
-
-/**
- * @copyright   2014 David McClure
- * @license     http://www.gnu.org/copyleft/gpl.html
- * @package     dclure
- */
-
-?><!DOCTYPE html>
+<!DOCTYPE html>
 <head>
 <meta charset="<?php bloginfo('charset'); ?>" />
 <meta name="viewport" content="width=device-width" />
